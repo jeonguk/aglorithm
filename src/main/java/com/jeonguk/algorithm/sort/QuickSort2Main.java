@@ -16,6 +16,7 @@ public class QuickSort2Main {
 
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[(low + high) / 2];
+
         while (low <= high) {
             while (arr[low] < pivot) low++;
             while (arr[high] > pivot) high--;
@@ -25,6 +26,7 @@ public class QuickSort2Main {
                 high--;
             }
         }
+
         return low;
     }
 
@@ -32,6 +34,16 @@ public class QuickSort2Main {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
+    }
+
+    public static void main(String[] args) {
+        int[] givenArray = {9, 5, 1, 0, 6, 2, 3, 4, 7, 8};
+
+        quickSort(givenArray);
+
+        for (int i : givenArray) {
+            System.out.print(i);
+        }
     }
 
 }

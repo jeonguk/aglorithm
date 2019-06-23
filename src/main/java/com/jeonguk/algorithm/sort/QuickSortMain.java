@@ -44,6 +44,7 @@ public class QuickSortMain {
         }
 
         int swapTemp = arr[i + 1];
+
         arr[i + 1] = arr[end];
         arr[end] = swapTemp;
 
