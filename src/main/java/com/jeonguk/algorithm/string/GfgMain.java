@@ -28,6 +28,20 @@ import java.util.Set;
  */
 public class GfgMain {
 
+    public static String gfg(String str1, String str2) {
+        final StringBuilder result = new StringBuilder();
+        final Set<Character> set = new HashSet<>();
+        for (Character c: str2.toCharArray()) {
+            set.add(c);
+        }
+        for (int i = 0; i < str1.length(); i++) {
+            if (!set.contains(str1.charAt(i))) {
+                result.append(str1.charAt(i));
+            }
+        }
+        return result.toString();
+    }
+
     /**
      * Example:
      *
