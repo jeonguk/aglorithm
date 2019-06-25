@@ -1,8 +1,8 @@
-package com.jeonguk.datastruct;
+package com.jeonguk.datastruct.queue;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class QueueTest {
 

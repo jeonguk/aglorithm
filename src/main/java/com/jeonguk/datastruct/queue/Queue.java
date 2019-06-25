@@ -1,4 +1,4 @@
-package com.jeonguk.datastruct;
+package com.jeonguk.datastruct.queue;
 
 import java.util.NoSuchElementException;
 
