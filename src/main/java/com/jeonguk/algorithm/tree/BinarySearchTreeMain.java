@@ -2,7 +2,7 @@ package com.jeonguk.algorithm.tree;
 
 public class BinarySearchTreeMain {
 
-    private Node root = new Node();
+    Node root = new Node();
 
     public Node insertKey(final Node root, int x) {
         Node newNode = new Node(x);
@@ -76,27 +76,25 @@ public class BinarySearchTreeMain {
         }
     }
 
-}
+    class Node {
+        int data;
+        Node left;
+        Node right;
 
-class Node {
+        public Node() {
+            this.left = null;
+            this.right = null;
+        }
 
-    int data;
-    Node left;
-    Node right;
+        public Node(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
 
-    public Node() {
-        this.left = null;
-        this.right = null;
-    }
-
-    public Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-
-    public int getData() {
-        return data;
+        public int getData() {
+            return data;
+        }
     }
 
 }
